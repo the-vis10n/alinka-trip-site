@@ -1,0 +1,177 @@
+.Price{
+    max-width: 100vw;
+    position: relative;
+}
+.Colos{
+    width: 844px;
+    height: 564px;
+    position: absolute;
+    top: 20%;
+    left: 0px;
+    transform: rotate(3deg);
+    z-index: -1;
+}
+.Piza{
+    width: 334px;
+    height: 620px;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    transform: rotate(-6deg);
+    z-index: -1;
+}
+.Price-Title{
+    width:fit-content;
+    margin: 0 auto;
+    text-align: center;
+    font-family: var(--bold);
+    font-weight: 700;
+    font-size: 40px;
+    color: #232357;
+    z-index: 100;
+    position: relative;
+    margin-bottom: 130px;
+    padding-top: 30px;
+}
+.Price-Title::after {
+    content: '';
+    display: block;
+    width: 110%;
+    background-color: #0678F2;
+    height: 4px;
+    z-index: 100;
+    position: absolute;
+    left: -5%;
+    bottom: -10px;
+}
+.Price-Box{
+    width: 43vw;
+    border-radius: 28px;
+    padding: 100px;
+    margin: 0 auto;
+    background: rgba(249, 209, 162, 0.85);
+    margin-bottom: 190px;
+    position: relative;
+}
+
+.Price-Item{
+    width: 100%;
+    z-index: 10;
+    margin-bottom: 70px;
+    align-items:center;
+    display: grid;
+    grid-template-columns: 8% 90%;
+    grid-template-rows: 40fr 40fr;
+    grid-column-gap: 40px;
+}
+.Price-Item:last-child{
+    margin-bottom: 20px;
+}
+.Price-icon{
+    width: 60px;
+    height: 60px;
+    z-index: 10;
+    grid-area: 1 / 1 / 3 / 2;
+}
+.Price-Text, .Price-Text2{
+    font-family: var(--bold);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 250%;
+    color: #232357;
+    text-align: start;
+    
+}
+.Price-Text{
+    grid-area: 1 / 2 / 2 / 3;
+}
+.Price-Text2{
+   grid-area: 2 / 2 / 3 / 3; 
+}
+
+.Price-Text span {
+    font-family: var(--nico);
+    font-size: 40px;
+    color: #FF0000;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media (max-width: 1800px){
+    .Price-Text, .Price-Text2{
+        font-size: clamp(16px, 1vw, 20px);
+        line-height: clamp(120%, 3vw, 250%);
+    }
+    .Price-Text span {
+        font-size: clamp(20px, 2.3vw, 40px);
+    }
+    .Price-Box{
+    padding: clamp(50px, 5vw, 100px);
+    }
+    .Price-Item{
+        grid-column-gap: 30px ;
+    }
+}
+@media (max-width:1200px) {
+    .Colos{
+        width: 562px;
+        height: 376px;
+        top: 30%;
+    }
+    .Piza{
+        width: 222px;
+        height: 413px;
+        top: 25%;
+        right: 0;
+    }
+    .Price-Title{
+        font-size: clamp(25px, 3vw,40px);
+        margin-bottom: 90px;
+    }
+    .Price-Box{
+    width: 70vw;
+    margin-bottom: 90px;
+    }
+    .Price-Text, .Price-Text2{
+    font-size: clamp(12px, 2vw,16px);
+    }
+    .Price-Text span {
+        font-size: clamp(20px, 3vw, 40px);
+    }
+    .Price-Item{
+        margin: 0 auto ;
+        margin-bottom: 50px;
+    }
+    .Price-icon{
+        width: clamp(50px, 2vw, 60px);
+        height: clamp(50px, 2vw, 60px);
+    }
+}
+@media (max-width:768px) {
+    .Colos{
+        width: 374px;
+        height: 250px;
+        top: 30%;
+    }
+    .Piza{
+        width: 148px;
+        height: 275px;
+        top: 25%;
+        right: 0;
+    }
+    .Price-Text, .Price-Text2{
+    font-size: clamp(9px, 1.7vw,12px);
+    }
+    .Price-Text span {
+        font-size: clamp(17px, 2.9vw, 20px);
+    }
+    .Price-Item{
+            margin: 0 auto ;
+            margin-bottom: 30px;
+        }
+    .Price-Box{
+        padding: clamp(30px, 1vw, 50px);
+        margin-bottom: 40px;
+    }
+   
+}

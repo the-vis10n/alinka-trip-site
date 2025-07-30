@@ -1,0 +1,109 @@
+.Nav-box{
+    position:fixed;
+    right: 0;
+    top: 33%;
+    width: 45px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #232357;
+    border-top-left-radius: 28px;
+    border-bottom-left-radius: 28px; 
+    z-index: 200;
+    
+}
+.Nav-Logo{
+    width: 30px;
+    height: 30px;
+}
+.Nav-Logo:hover {
+    
+    cursor: pointer;
+}
+.icon-box{
+    width: 30px;
+    height: 30px; 
+    padding-top: 5px; 
+    padding-bottom: 5px;
+    padding-left: 7.5px;
+    padding-right: 7.5px; 
+    position: relative;
+}
+.icon-box:first-child{
+   padding-top: 10px; 
+   border-top-left-radius: 24px;
+}
+.icon-box:last-child{
+   padding-bottom: 10px; 
+   border-bottom-left-radius: 24px;
+}
+.icon-box:hover{
+    background-color: #F29E3D;
+}
+.icon-box:hover .prompt{
+    display: block;  
+    animation:  show ease-in 1s;
+}
+.active {
+    background-color: #F29E3D;
+}
+.prompt{
+    display: none;
+    width: 100px;
+    text-align: center;
+    font-size: 13px;
+    position: absolute;
+    background-color: #232357;
+    color: #fefaee;
+    border: 1px solid #fefaee;
+    font-family: var(--bold);
+    padding: 7px;
+    border-radius: 10px;
+    left: -130px;
+    top: 20%;
+}
+
+@keyframes show {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 768px){
+    .Nav-box{
+        left: 25%;
+        top:inherit;
+        bottom: 0;
+        flex-direction:row;
+        width: 250px;
+        height: 47px;
+        padding-left: 10px; 
+        padding-right: 10px;
+        border-top-left-radius: 0;
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px; 
+        border-bottom-left-radius: 0; 
+    }
+    .icon-box:first-child{
+    padding-top: 7px; 
+    padding-bottom: 10px; 
+    padding-left: 10px; 
+    border-top-right-radius: 0;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    }
+    .icon-box:last-child{
+    padding-top: 7px;   
+    padding-right: 15px; 
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 24px;
+    }
+    .icon-box{ 
+    padding-top: 7px; 
+    padding-bottom: 10px;
+    padding-left:7.5px;
+    padding-right: 7.5px; 
+}
+}
