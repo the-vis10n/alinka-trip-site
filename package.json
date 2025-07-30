@@ -2,6 +2,7 @@
   "name": "alinka-trip-site",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://the-vis10n.github.io/alinka-trip-site/",
   "type": "module",
   "scripts": {
     "dev": "vite",
