@@ -1,6 +1,6 @@
 {
   "name": "alinka-trip-site",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "homepage": "https://the-vis10n.github.io/alinka-trip-site/",
   "type": "module",
